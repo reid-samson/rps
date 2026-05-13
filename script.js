@@ -67,6 +67,14 @@ function playGame() {
             humanScore = humanScore + 1;
         }
     }
+
+    if (computerScore == humanScore) {
+        console.log("draw")
+    } else if (computerScore < humanScore) {
+        console.log("player wins")
+    } else {
+        console.log("computer wins")
+    }
 }
 
 playGame();
